@@ -13,12 +13,17 @@
   他是调用GPU资源的模块，获得server端传过来的数据，然后调用GPU进行计算，最后将结果返回给server
   
 安装：
+
     nvcc -c addfunc.cu
+	
 	make
 
 停止server：
+
     ./stop.sh
+	
 由于server.exe使用了守护进程，所以必须调用stop.sh才能停止server.exe
 
 清除：
+
 	make clean
