@@ -1,5 +1,6 @@
 # GPU-server-client
 本次任务完成了三个主要模块
+
 1.守护进程server
   它负责在系统进程中等待client的输入数据，通过ipc shared memory获得数据，并调用GPU kernel model计算，
   最后将计算的结果返回给client
